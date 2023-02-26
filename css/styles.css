@@ -11,6 +11,22 @@ li {
   list-style-type: none;
   text-decoration: none;
 }
+ul,
+h1,
+p,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 /* ------logo----------*/
 .logotype,
@@ -70,48 +86,42 @@ li {
 .logotype {
   margin-right: 76px;
 }
-
 .header {
-  padding-top: 24px;
-  padding-left: 15px;
-  padding-right: 15px;
   padding-top: 24px;
   padding-bottom: 24px;
   display: flex;
   justify-content: space-between;
 }
+.header .container {
+  display: flex;
+}
+.header-address {
+  margin-left: auto;
+}
 .header-list {
   display: flex;
   align-items: center;
-}
-
-.contact-mail {
-  margin: 40px;
+  margin-right: 76px;
 }
 .link-menu {
   display: flex;
   margin-right: auto;
   gap: 40px;
 }
-
 .contact-menu {
   display: flex;
   margin-left: auto;
+  gap: 40px;
 }
+
 /* -------------------hero-----------------------*/
 .container {
   width: 1158px;
-  margin-left: 15px;
-  margin-right: 15px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 .hero {
   background: #2e2f42;
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
   padding: 188px 0;
 }
 .desc {
@@ -166,6 +176,7 @@ li {
   justify-content: center;
   align-items: center;
   padding: 12px 24px;
+  margin-bottom: 72px;
 }
 .portfolio-butn {
   display: flex;
@@ -176,6 +187,7 @@ li {
 .potfolio-button:hover {
   background: #404bbf;
   color: #ffffff;
+  border-color: #404bbf;
 }
 .potfolio-button:focus {
   background: #404bbf;
@@ -186,17 +198,21 @@ li {
   flex-wrap: wrap;
   row-gap: 48px;
   column-gap: 24px;
-  width: ((100% - 48px) / 3);
   display: flex;
   max-width: 100%;
   height: auto;
   padding-left: 0;
 }
+.list-pic {
+  width: calc ((100% - 48px) / 3);
+}
+
 .portfolio {
   padding-bottom: 120px;
+  padding-top: 96px;
 }
 .picture {
-  padding: 32px;
+  padding: 32px 16px;
   background: #ffffff;
   border: 1px solid #e7e9fc;
   border-top: 0;
@@ -257,18 +273,20 @@ li {
   padding: 32px;
   text-align: center;
   background: #ffffff;
-
   border-radius: 0px 0px 4px 4px;
+}
+.icons-team {
+  width: calc((100% - 72px) / 4);
 }
 .list-icons-team {
   gap: 24px;
   display: flex;
-  width: calc((100% - 72px) / 4);
   text-align: center;
 }
 .team-content {
   background: #f4f4fd;
   padding-top: 120px;
+  padding-bottom: 120px;
 }
 .employee {
   font-weight: 500;
@@ -282,13 +300,7 @@ li {
 }
 .footer-content {
   background: #2e2f42;
-  margin-right: auto;
   padding: 100px 0;
-  padding-right: 156px;
-  display: flex;
-  flex-direction: row;
-  margin-right: 156px;
-  padding-left: 156px;
 }
 .logotype-footer {
   font-family: 'Raleway';
@@ -299,7 +311,7 @@ li {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #f4f4fd;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 .logo-footer {
   color: #4d5ae5;
